@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "python-di-practice"
+version = "0.1.0"
+description = ""
+authors = ["Ben <ben@ahnlab.io>"]
+readme = "README.md"
+packages = [{include = "python_di_practice"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+dependency-injector = "^4.40.0"
+boto3 = "^1.26.30"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+sqlalchemy = "^1.4.45"
+pyyaml = "^6.0"
+
+
+[tool.poetry.group.pytest.dependencies]
+flake8 = "^6.0.0"
+black = "^22.12.0"
+mypy = "^0.991"
+pylint = "^2.15.8"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy-boto3-s3 = "^1.26.0.post1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
